@@ -1,2 +1,2 @@
-cd left/down/beginning/
+cd theDirectory/left/down/beginning/
 pwd
