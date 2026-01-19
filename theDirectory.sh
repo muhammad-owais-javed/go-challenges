@@ -1,2 +1,2 @@
-grep -lr "You have found me"
-left/down/beginning/README
+cd left/down/beginning/
+pwd
