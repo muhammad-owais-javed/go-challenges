@@ -1,9 +1,0 @@
-#!/bin/bash
-
-echo "$MOVE_A"
-
-if [[ "$MOVE_A" == "no" ]]; then
- echo "ABCD"
-else
- echo "EFG"
-fi
