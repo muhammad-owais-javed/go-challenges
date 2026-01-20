@@ -3,15 +3,16 @@ package main
 import "fmt"
 
 func main() {
-    
- a=Casting(3.456)
+
+ reverse := ReverseAlphabetValue('b')
  fmt.Println("Hello, World!")
- fmt.Print(a)
+ fmt.Println(reverse, string(reverse))
 }
 
-func Casting(n float64) int {
-  var x int = int(math.Round(n))
-  return x
+func ReverseAlphabetValue(ch rune) rune {
+
+ hold := 'z' - ch
+ return hold + 'a'
 
 }
 
