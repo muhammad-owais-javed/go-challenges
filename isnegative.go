@@ -1,9 +1,12 @@
 package sprint
 
 func IsNegative(n int) bool {
-  if ( n >= 0 ) {
+ if (n == 0){
+	return false
+} 
+ if ( n > 0 ) {
 	return true
-  } else{
+  } else {
 	return false
  }
 }

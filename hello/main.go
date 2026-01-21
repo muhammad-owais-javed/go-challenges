@@ -4,17 +4,16 @@ import "fmt"
 
 func main() {
 
- reverse := ReverseAlphabetValue('b')
+ //reverse := ReverseAlphabetValue('b')
  fmt.Println("Hello, World!")
- fmt.Println(reverse, string(reverse))
+ //fmt.Println(reverse, string(reverse))
+ var i int = 5
+ if (i > 0 ) {
+  fmt.Println("i is positive")
+ 
+ }
+ 
 }
-
-
-func ShiftBy(r rune, step int) rune {
-  
-
-}
-
 
 func ReverseAlphabetValue(ch rune) rune {
 
