@@ -8,7 +8,7 @@ result := 0
 	return result
  } else if  n > 0  {
 
- for i := 0; i <= 4; i++ {
+ for i := 0; i <= n; i++ {
  	result += i
   }
  
