@@ -4,22 +4,15 @@ import "fmt"
 
 func main() {
 
- //reverse := ReverseAlphabetValue('b')
  fmt.Println("Hello, World!")
- //fmt.Println(reverse, string(reverse))
- var i int = 5
- if (i > 0 ) {
-  fmt.Println("i is positive")
+ var status bool 
+ if (1 > 0 ) {
+    
+    status = true
+    fmt.Println(status)
  
  }
  
-}
-
-func ReverseAlphabetValue(ch rune) rune {
-
- hold := 'z' - ch
- return hold + 'a'
-
 }
 
 
