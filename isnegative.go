@@ -1,3 +1,5 @@
+package sprint
+
 func IsNegative(n int) bool {
 
  if ( n >= 0 )
