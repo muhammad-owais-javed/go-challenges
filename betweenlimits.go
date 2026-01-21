@@ -25,6 +25,6 @@ if from > to {
  }
 
  return string(resultrune)
-*/
-}
 
+}
+*/
