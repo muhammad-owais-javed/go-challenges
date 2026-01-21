@@ -4,9 +4,9 @@ func IsNegative(n int) bool {
  if (n == 0){
 	return false
  } else if ( n >= 1 ) {
+	return falsse
+ } else if ( n <= -1 ){
 	return true
- } else if ( n =< -1 ){
-	return false
  }
  return false
 }
