@@ -1,19 +1,17 @@
 package sprint
+import "fmt"
+
 
 func Countdown(n int) string {
-
-	var result []string
-
-	for i:=n ; i > 0; i-=2 {
-
-	numberAsChar := '0' + i
-	result = append(result, str.conv.Itoa(i))
 	
-
+	result := ""
+	
+	for i := n; i > 0;  i -= 2 {
+		result += string('0' + rune(i)) + ", "
 	}
-
-	mainpart := strings.Join(result, ",")
-	return mainpart + ", 0!"
-
+	fmt.Println(string(result))
+	result = result+"0!"
+	return result
 }
+
 
