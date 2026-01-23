@@ -9,6 +9,7 @@ func Countdown(n int) string {
 	numberAsChar = '0' + i
 	result += string(numberAsChar)
 	result += ", "
+
 	}
 
 	result = result[:len(result)-2]
