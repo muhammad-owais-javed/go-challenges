@@ -1,7 +1,5 @@
 package sprint
 
-import "fmt"
-
 func ReverseAlphabet(step int) string {
 	
     if step <= 0 {
@@ -16,10 +14,3 @@ func ReverseAlphabet(step int) string {
     return result
 }
 
-/*
-func main() {
-
-  fmt.Println(ReverseAlphabet(5))
-
-}
-*/
