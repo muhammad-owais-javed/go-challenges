@@ -1,7 +1,5 @@
 package sprint
 
-import "fmt"
-
 func AlphabetMastery(n int) string {
 	
 	result := ""
