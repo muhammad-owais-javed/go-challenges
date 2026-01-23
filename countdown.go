@@ -17,5 +17,3 @@ func Countdown(n int) string {
 
 }
 
-
-"6
