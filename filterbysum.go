@@ -6,10 +6,10 @@ func FilterBySum(arr [][]int, limit int) [][]int {
 	for i := 0 ; i < len(arr); i++ {
 		sum := 0
 		for j:=0 ; j < i ; j++ {
-			sum += j
+			sum += arr[i][j]
 		}
 		if sum >= limit {
-			arr1 = append(arr1, i)
+			arr1 = append(arr1, arr[i])
 
 		}
 	}

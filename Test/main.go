@@ -1,25 +1,27 @@
 package main
+
 import (
 	"fmt"
-	"reflect"
 )
 
 func main() {
   fmt.Println("Main Function")
   
-  var min int = 1
-  var max int = 5
-  var size int = max - min + 1
-  
-  arr := make([]int, size)
-  fmt.Println(reflect.TypeOf(arr))
-  fmt.Println(len(arr))
-  
-  for i:= 0; i<size; i++ {
-  	arr[i] = min+i
+ 
+  arr := [][]int{{1, 2, 3}, {2, 3, 4}, {3, 4, 5}}
+  var num int = 9
+
+
+  fmt.Println(arr[0][1], num)
+
+  for i:=0 ; i < len(arr) ; i++ {
+    for j:=0 ; j < len(arr) ; j++ {
+
+      fmt.Println(arr[i][j])
+
+    }
+
 
   }
 
-  fmt.Println(arr)
-    
 }
