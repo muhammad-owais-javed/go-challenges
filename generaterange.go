@@ -7,7 +7,7 @@ func GenerateRange(min, max int) []int{
 	return arr
   }
 	
-  var size int = max - min + 1 
+  var size int = max - min 
   
   arr := make([]int, size)
   
