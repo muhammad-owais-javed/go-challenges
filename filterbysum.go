@@ -1,17 +1,19 @@
 package main
 
 func FilterBySum(arr [][]int, limit int) [][]int {
+
 	arr1 := make([][]int, 0)
 
-	for i := 0 ; i < len(arr); i++ {
+	for _, currentElements := range arr {
 		sum := 0
-		for j:=0 ; j < i ; j++ {
-			sum += arr[i][j]
+		for _, newElements := range currentElements {
+			sum += newElements
 		}
 		if sum >= limit {
-			arr1 = append(arr1, arr[i])
+			arr1 = append(arr1, currentElements)
 
 		}
 	}
 	return arr1
 }
+
