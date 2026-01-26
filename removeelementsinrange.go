@@ -17,4 +17,6 @@ func RemoveElementsInRange(arr []float64, from, to int) []float64 {
 
   }
 
+  return result
+
 }
