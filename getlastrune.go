@@ -2,8 +2,11 @@ package sprint
 
 func GetLastRune(s string) rune {
 
- li := len(s)-2
- runes := []rune(s)
- return runes[li]
+ for _, r := range s {
+
+	last:= r
+ }
+
+return last
 
 }
