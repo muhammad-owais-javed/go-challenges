@@ -2,7 +2,7 @@ package sprint
 
 func GetFirstRune(s string) rune {
 
- runeArray := []rune(s[0])
- return runeArray
+ runes:= []rune(s)
+ return runes[0]
 
 }
