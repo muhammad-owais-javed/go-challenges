@@ -1,3 +1,5 @@
+package sprint
+
 func IsNumeric(s string) bool  {	
   
   if s == "" {		
