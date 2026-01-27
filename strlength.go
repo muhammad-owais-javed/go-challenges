@@ -10,7 +10,7 @@ func StrLength(s string) []int {
  }
 
  res = append(res, counter)
- res = append(res, len(str))
+ res = append(res, len(s))
 
  return res
   //fmt.Println(counter)
