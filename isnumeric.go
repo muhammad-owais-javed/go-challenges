@@ -13,6 +13,5 @@ func IsNumeric(s string) bool  {
       }
 
   }	
-    
   return true
 }
