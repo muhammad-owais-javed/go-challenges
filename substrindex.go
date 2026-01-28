@@ -1,3 +1,5 @@
+package sprint
+
 func SubstrIndex(s string, toFind string) int {
 	
 	if toFind == "" {
