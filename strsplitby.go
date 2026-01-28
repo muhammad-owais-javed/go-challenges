@@ -9,7 +9,7 @@ func StrSplitBy(s, sep string) []string {
 	if s == "" && sep == "" {
 		//result = []string{}  //Empty Slice
 		//fmt.Println("If Condition")
-		return NIL
+		return nil
 	}
 
 	for i := 0; i < len(s); {
