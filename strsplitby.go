@@ -18,6 +18,12 @@ func StrSplitBy(s, sep string) []string {
 	
 	}
 
+	//For empty
+	if s == "" && sep == "" {
+		return []string{}
+	}
+
 	result = append(result, part)
 	return result
+
 }
