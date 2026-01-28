@@ -5,9 +5,10 @@ func StrSplitBy(s, sep string) []string {
 	var result []string
 	part := ""
 
-	//For empty
+		//For empty
 	if s == "" && sep == "" {
-		return ""
+		result = []string{}
+		return result
 	}
 
 	for i := 0; i < len(s); {
