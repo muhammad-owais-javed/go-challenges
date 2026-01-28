@@ -1,5 +1,5 @@
 package sprint
-import "fmt"
+//import "fmt"
 func StrSplitBy(s, sep string) []string {
 	
 	var result []string //NIL slice
@@ -8,9 +8,8 @@ func StrSplitBy(s, sep string) []string {
 		//For empty
 	if s == "" && sep == "" {
 		//result = []string{}  //Empty Slice
-		fmt.Println("If Condition")
-		return result
-	}
+		//fmt.Println("If Condition")
+		return NIL
 
 	for i := 0; i < len(s); {
 	
@@ -24,8 +23,6 @@ func StrSplitBy(s, sep string) []string {
 		}
 	
 	}
-
-
 
 	result = append(result, part)
 	return result
