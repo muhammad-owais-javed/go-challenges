@@ -7,7 +7,7 @@ func StrSplitBy(s, sep string) []string {
 
 	//For empty
 	if s == "" && sep == "" {
-		return []string{}
+		return nil
 	}
 
 	for i := 0; i < len(s); {
