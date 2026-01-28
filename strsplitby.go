@@ -2,12 +2,14 @@ package sprint
 
 func StrSplitBy(s, sep string) []string {
 	
-	var result []string
+	var result []string //NIL slice
 	part := ""
 
 		//For empty
 	if s == "" && sep == "" {
-		result = []string{}
+		//result = []string{}  //Empty Slice
+		
+		
 		return result
 	}
 
