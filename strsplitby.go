@@ -6,7 +6,7 @@ func StrSplitBy(s, sep string) []string {
 	part := ""
 
 		//For empty
-	if s == "" && sep == "" {
+	if s == nil || sep == nil {
 		//result = []string{}  //Empty Slice
 		//fmt.Println("If Condition")
 		return nil
