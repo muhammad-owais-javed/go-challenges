@@ -10,6 +10,7 @@ func StrSplitBy(s, sep string) []string {
 		//result = []string{}  //Empty Slice
 		//fmt.Println("If Condition")
 		return NIL
+	}
 
 	for i := 0; i < len(s); {
 	
