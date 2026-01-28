@@ -1,14 +1,12 @@
 package sprint
 
 func StrSplitBy(s, sep string) []string {
-	
 	var result []string
-	current := ""
-	i := 0
+	word := ""
 
-	for i < len(s) {
-	
-		if s[i:i+len(sep)]== sep {
+	for i := 0; i < len(s); {
+		
+		if s[i:i+len(sep)] == sep {
 			result = append(result, word)
 			word = ""
 			i += len(sep)
@@ -18,8 +16,6 @@ func StrSplitBy(s, sep string) []string {
 		}
 	}
 
-
-	result = append(result, current)
-
+	result = append(result, word)
 	return result
 }
