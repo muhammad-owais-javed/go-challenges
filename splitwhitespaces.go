@@ -15,10 +15,10 @@ func SplitWhitespaces(s string) []string {
 			word += string(r)
 		}
 	}
-/*
+
 	if word != "" {
 		result = append(result, word)
 	}
-*/
+
 	return result
 }
