@@ -1,31 +1,25 @@
 package sprint
-//import "fmt"
+
 func StrSplitBy(s, sep string) []string {
-	
-	var result []string //NIL slice
-	part := ""
+    var result []string // start as empty slice
+    part := ""
 
-		//For empty
-	if s == nil || sep == nil {
-		//result = []string{}  //Empty Slice
-		//fmt.Println("If Condition")
-		return nil
-	}
+    // Return empty slice if input is empty
+    if s == "" || sep == "" {
+        return []string{} // <-- return empty slice instead of nil
+    }
 
-	for i := 0; i < len(s); {
-	
-		if i+len(sep) <= len(s) && s[i:i+len(sep)] == sep {
-			result = append(result, part)
-			part = ""
-			i += len(sep)
-		} else {
-			part += string(s[i])
-			i++
-		}
-	
-	}
+    for i := 0; i < len(s); {
+        if i+len(sep) <= len(s) && s[i:i+len(sep)] == sep {
+            result = append(result, part)
+            part = ""
+            i += len(sep)
+        } else {
+            part += string(s[i])
+            i++
+        }
+    }
 
-	result = append(result, part)
-	return result
-
+    result = append(result, part)
+    return result
 }
