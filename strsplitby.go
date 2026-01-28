@@ -8,7 +8,7 @@ func StrSplitBy(s, sep string) []string {
 		//For empty
 	if s == "" && sep == "" {
 		//result = []string{}  //Empty Slice
-	
+		fmt.Println("If Condition")
 		return result
 	}
 
