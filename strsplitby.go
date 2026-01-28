@@ -5,6 +5,11 @@ func StrSplitBy(s, sep string) []string {
 	var result []string
 	part := ""
 
+	//For empty
+	if s == "" && sep == "" {
+		return []string{}
+	}
+
 	for i := 0; i < len(s); {
 	
 		if i+len(sep) <= len(s) && s[i:i+len(sep)] == sep {
@@ -18,10 +23,7 @@ func StrSplitBy(s, sep string) []string {
 	
 	}
 
-	//For empty
-	if s == "" && sep == "" {
-		return []string{}
-	}
+
 
 	result = append(result, part)
 	return result
