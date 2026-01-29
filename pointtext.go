@@ -11,5 +11,5 @@ type Point struct{
 
 func PointText(p Point) Point {
 
-	return Point{p.X, p.Y, fmt.Println("Text at (%f, %f):", p.X, p.Y)}
+	return Point{X: p.X, Y: p.Y, Text: fmt.Println("Text at (%f, %f):", p.X, p.Y)}
 }
