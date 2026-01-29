@@ -13,7 +13,9 @@ func PointDiff(p1, p2 Point) Point {
 		return p1
 	} else if p2.Y > p1.X {
 		return p2
-	} else p1.X == p2.Y {
+	} else if p1.X == p2.Y {
 		return p2
 	}
+
+	return p1.X
 }
