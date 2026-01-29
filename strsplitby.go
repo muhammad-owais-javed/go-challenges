@@ -4,9 +4,9 @@ func StrSplitBy(s, sep string) []string {
     var result []string // start as empty slice
     part := ""
 
-    // Return empty slice if input is empty
+    // empty slice if input is empty (Nil is creating issues even though output appears to be same)
     if s == "" || sep == "" {
-        return []string{} // <-- return empty slice instead of nil
+        return []string{} //empty slice instead of nil
     }
 
     for i := 0; i < len(s); {
