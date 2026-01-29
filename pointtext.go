@@ -1,5 +1,4 @@
 package sprint
-
 import "fmt"
 
 type Point struct{
@@ -9,7 +8,9 @@ type Point struct{
 	Text string
 }
 
-func PointText(p Point) Point {
 
-	return Point{X: p.X, Y: p.Y, Text: fmt.Println("Text at (%v, %v):", p.X, p.Y),}
+
+func PointText(p Point) Point {
+    p.Text = fmt.Sprintf("Text at (%f, %f)", p.X, p.Y)
+    return p
 }
