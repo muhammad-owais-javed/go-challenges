@@ -17,5 +17,5 @@ func PointDiff(p1, p2 Point) Point {
 		return p2
 	}
 
-	return p1.X
+	return p1
 }
