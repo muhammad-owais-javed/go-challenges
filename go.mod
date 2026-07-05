@@ -1,3 +1,3 @@
-module sprint/abacus.go
+module sprint/
 
 go 1.18
