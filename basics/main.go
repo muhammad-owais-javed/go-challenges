@@ -90,8 +90,10 @@ func main() {
 	fruits = [3]string{"Apple", "Oranges", "Banana"}
 	var ports [3]int = [3]int{80, 8080, 443}
 
+	set := make([]string, 3)
 
-	fmt.Printf("\n%d, %s, %d\n", ptrAddr, fruits, ports)
+
+	fmt.Printf("\n%d, %s, %d, %s\n", ptrAddr, fruits, ports, set)
 
 }
 
